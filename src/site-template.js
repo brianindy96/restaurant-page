@@ -1,6 +1,6 @@
 const container = document.getElementById("content");
 
-const header = () =>{
+let header = () =>{
     // .header -> parent
     let header = document.createElement("div");
     header.classList.add("header");
@@ -41,22 +41,23 @@ const header = () =>{
 
 }
 
-const main = () =>{
+let main = () =>{
     //.main child of #content
     let main = document.createElement("div");
     main.classList.add("main");
 
     //.main-content child of .main
     let content = document.createElement("div");
-    content.classList.add("main-content");
+    content.classList.add("main-container");
+
+    
 
     main.appendChild(content);
-
 
     container.appendChild(main);
 }
 
-const footer = () =>{
+let footer = () =>{
     //  .footer child of #content
     let footer = document.createElement("div");
     footer.classList.add("footer");
