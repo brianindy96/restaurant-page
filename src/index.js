@@ -1,3 +1,15 @@
 import "./main.css";
+import {main, header, footer} from './site-template';
 
-console.log("123");
+
+function runTemplate(){
+    header();
+    main();
+    footer();
+}
+
+runTemplate();
+
+
+
+
