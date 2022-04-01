@@ -37,7 +37,6 @@ body{
 
 .header-links > ul > li{
     margin-top: 20px;
-    
     font-size: 1.2rem;
     list-style: none;
 }
@@ -47,7 +46,19 @@ body{
 }
 
 .main{
-    background-image: url(../pics/restaurant.jpeg);
     /* background-repeat is on purpose lol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.main-content{
+    background-color: white;
+    height: 80vh;
+    width: 90vw;
+    border-radius: 30px;
+}
+
+.footer{
+    height: 5vh;
 }
