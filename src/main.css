@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
 body{
-    background: purple;
+    height: 100vh;
+    background-color: black;
+}
+
+#content{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0fr 3fr 0fr;
+}
+
+.header{
+    height: 8vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.header-name{
+    padding: 20px;
+}
+.header-links > ul{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.header-links > ul > li{
+    margin-top: 20px;
+    
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.header-links a{
+    text-decoration: none;
+}
+
+.main{
+    background-image: url(../pics/restaurant.jpeg);
+    /* background-repeat is on purpose lol */
+
 }
