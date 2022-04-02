@@ -13,7 +13,7 @@ let main4 = () =>{
     let main3top = document.createElement("div");
     main3top.classList.add("main3-header");
     
-    let headmain3 = document.createElement("h2");
+    let headmain3 = document.createElement("h1");
     headmain3.innerHTML = "Our Menu"
 
     //main-container3 card-container child of main-container3
@@ -58,6 +58,50 @@ let main4 = () =>{
     bot2.classList.add("bot2");
 
     let bot3 = document.createElement("div");
+    bot3.classList.add("bot3");
+
+    //Menu Names
+
+    let botname1 = document.createElement("h2");
+    botname1.innerHTML = 'Brain Salad';
+    botname1.classList.add("bot1-title");
+
+    let botname2 = document.createElement("h2");
+    botname2.innerHTML = 'Senior Citizens';
+    botname2.classList.add("bot2-title");
+    
+    let botname3 = document.createElement("h2");
+    botname3.innerHTML = 'Brain Smoothies';
+    botname3.classList.add("bot3-title");
+
+
+    // List of Menus
+    let bot1list = document.createElement("ul");
+    let items = ['Lettuce', 'Tomatoes', 'Human Brain', 'Fingernails','Snake Eggs'];
+
+    for (let i =0; i < items.length; i++){
+        let item = document.createElement('li');
+        item.innerHTML = items[i];
+        bot1list.appendChild(item);
+    }
+
+    let bot2list = document.createElement("ul");
+    let johns = ['White Hair', 'Fake Teeth', 'Human Wisdom', 'Fried Wrinkly Skin',"That's too far.."];
+
+    for (let i =0; i < johns.length; i++){
+        let item = document.createElement('li');
+        item.innerHTML = johns[i];
+        bot2list.appendChild(item);
+    }
+
+    let bot3list = document.createElement("ul");
+    let smoothies = ['Fresh Brain', 'Blood Syrup', 'Nails Sprinkles', 'Teeth seeds',];
+
+    for (let i =0; i < smoothies.length; i++){
+        let item = document.createElement('li');
+        item.innerHTML = smoothies[i];
+        bot3list.appendChild(item);
+    }
 
 
 
@@ -72,14 +116,27 @@ let main4 = () =>{
     card1.appendChild(top1);
     card1.appendChild(bot1);
     top1.appendChild(pic1);
+
+    // Card 1 bot
+    bot1.appendChild(botname1);
+    bot1.appendChild(bot1list);
+   
     // Card 2
     card2.appendChild(top2);
     card2.appendChild(bot2);
     top2.appendChild(pic2);
+
+    // Card 2 bot
+    bot2.appendChild(botname2);
+    bot2.appendChild(bot2list);
     // Card 3
     card3.appendChild(top3);
     card3.appendChild(bot3);
     top3.appendChild(pic3);
+
+    // Card 3 bot
+    bot3.appendChild(botname3);
+    bot3.appendChild(bot3list);
 
     container.appendChild(main);
 }
